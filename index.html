@@ -19,10 +19,29 @@
         body {
             font-family: "Work Sans", system-ui;
         }
+        /* span {
+            display: inline-block;
+            min-width: 2ch;
+            text-align: center;
+        } */
     </style>
 </head>
-<body class="p-3 md:p-0 lg:p-0">
-    
+<body class="p-3 md:p-0 lg:p-0 flex justify-center">
+    <section class="flex flex-col justify-center items-center gap-14 w-[400px] md:w-[800px] lg:w-[800px] h-[235px] mt-36">
+        <aside class="border px-4 py-2 rounded-lg shadow">
+            <h1 class="text-4xl md:text-7xl lg:text-7xl flex gap-2">
+                <span id="minutes" class="inline-block text-center w-[50px] md:w-[100px] lg:w-[100px]">00</span> : 
+                <span id="seconds" class="inline-block text-center w-[50px] md:w-[100px] lg:w-[100px]">00</span> : 
+                <span id="milliseconds" class="inline-block text-center w-[50px] md:w-[100px] lg:w-[100px]">00</span>
+            </h1>
+        </aside>
+        <aside class="flex gap-4 md:gap-8 lg:gap-8">
+            <button id="startButton" class="bg-sky-500 text-3xl md:text-6xl lg:text-6xl px-4 md:px-9 lg:px-9 py-2 md:py-4 lg:py-4 rounded-lg hover:bg-sky-600 active:opacity-70">Start</button>
+            <button id="stopButton" class="bg-sky-500 text-3xl md:text-6xl lg:text-6xl px-4 md:px-9 lg:px-9 py-2 md:py-4 lg:py-4 rounded-lg hover:bg-sky-600 active:opacity-70">Stop</button>
+            <button id="resetButton" class="bg-sky-500 text-3xl md:text-6xl lg:text-6xl px-4 md:px-9 lg:px-9 py-2 md:py-4 lg:py-4 rounded-lg hover:bg-sky-600 active:opacity-70">Reset</button>
+        </aside>
+    </section>
     <script src="js/stop-watch.js"></script>
+    <p class="absolute bottom-10 font-semibold text-lg">Develop by : <a class="text-sky-800 hover:underline font-bold" href="https://saziddeveloper.github.io/">saziddeveloper</a></p>
 </body>
 </html>
